@@ -18,11 +18,13 @@ const Header = props => {
   return (
     <nav className="nav-container">
       <div className="nav-lg">
-        <img
-          className="header-logo"
-          src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-          alt="website logo"
-        />
+        <Link to="/">
+          <img
+            className="header-logo"
+            src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
+            alt="website logo"
+          />
+        </Link>
         <ul className="ul-elements">
           <Link to="/" className="link-element">
             <li>Home</li>
@@ -36,16 +38,18 @@ const Header = props => {
         </button>
       </div>
       <div className="nav-sm">
-        <img
-          className="header-logo"
-          src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-          alt="website logo"
-        />
+        <Link to="/">
+          <img
+            className="header-logo"
+            src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
+            alt="website logo"
+          />
+        </Link>
         <ul className="ul-elements-sm">
           <Link to="/" className="link-element">
             <IoMdHome className="home-icon" />
           </Link>
-          <Link to="/" className="link-element">
+          <Link to="/jobs" className="link-element">
             <BsFillBriefcaseFill className="home-icon" />
           </Link>
           <button type="button" className="sm-button-logout" onClick={onLogout}>

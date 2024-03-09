@@ -39,3 +39,12 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+  .profile-container {
+    width: 80vw;
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
